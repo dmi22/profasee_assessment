@@ -27,3 +27,11 @@ services:
     command: ["./wait-for-it.sh", "database:3306", "--", "python", "test.py"]
     depends_on:
       - database
+
+  api:
+    build: .
+    command: ["uvicorn", "run:app", "--reload", "--host", "0.0.0.0"]
+    depends_on:
+      - database
+    ports:
+      - 8000:8000

@@ -1,0 +1,7 @@
+{
+  "src_url": "https://profasee-data-engineer-assessment-api.onrender.com/people.csv",
+  "raw_data_file_path": "/data/raw.csv",
+  "converted_data_file_path": "/data/converted.json",
+  "sql_db_url": "mysql://datatest:alligator@database/datatestdb",
+  "target_table_name": "people"
+}
